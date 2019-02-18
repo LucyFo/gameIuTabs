@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  background: url("../images/BG.jpeg") no-repeat 50% 50%;
+}
+body * {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal
+}
+h1, p {
+  text-transform: none;
+}
+h3 {
+    color: #fedc3f;
+    font-size: 12px;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+.wrapper {
+  margin: 0 auto;
+  padding: 145px 0 0 0;
+  width: 598px;
+}
+img {
+  width: auto;
+  max-width: 100%;
+}
+.gameCard {
+  margin: 0 auto;
+  min-height: 542px;
+  background-color: #212534;
+}
+header {
+  min-height: 116px;
+  background-color: #2b3040;
+}
+.information-block {
+  display: flex;
+  justify-content: space-between;
+  font-weight: normal;
+}
+.information-block-item {
+  padding: 32px;
+  width: 230px;
+  text-align: center;
+}
+.information-block-item h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+.thirty-three {
+  width: 33.3%;
+  text-align: center;
+}
+#rating-stars {
+    margin-top: 33px;
+}
+.sixty-six {
+  width: 66.6%;
+  margin-left: 39px;
+}
+.game-description p {
+  width: 309px;
+}
+.gameCard-content .wrapper {
+  padding: 59px 0;
+  width: 514px;
+}
+.content-container {
+  display: flex;
+  justify-content: space-between;
+}
+.game-description {
+    margin-top: 41px;
+    line-height: 1.5;
+}
+.hidden-text {
+    display: none;
+    line-height: 1.5;
+}
+.buy {
+  margin-top: 62px;
+  display: flex;
+  justify-content: space-between;
+}
+.buy a {
+  display: block;
+  padding: 25px 0;
+  width: 165px;
+  height: 56px;
+  background-color: #13e28d;
+  text-align: center;
+  border-radius: 2px;
+}
+.price {
+  font-size: 35px;
+}

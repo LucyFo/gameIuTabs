@@ -17,6 +17,13 @@ $(document).ready(function () {
     $('#link-to-buy').click(function () {
         window.location.href = 'https://store.ubi.com/ru/far-cry--4/56c4947a88a7e300458b45e2.html';
     });
+    $('.twenty').hover(function () {
+        $('.twenty').css('font-size', '25px')
+        $('.twenty').css( 'color', 'orange')
+    }, function () {
+        $('.twenty').css('font-size', '12px')
+        $('.twenty').css( 'color', 'yellow')
+    });
     $('.game-description').click(function (event) {
         var contentEl = event.target.nextElementSibling;
         if ($(contentEl).is(':hidden')) {
@@ -34,15 +41,15 @@ $(document).ready(function () {
         $('.rating-star').attr('src', '../images/favourite.png');
     });
     $('#game-image').click(function () {
-            function twistPicture(turn) {
-                $('#game-image').css({
-                    'transform': 'rotate(' + turn + 'deg)'
-                });
-                setTimeout(function () {
-                    turn += 45;
-                    twistPicture(turn);
-                }, 1000);
-            }
-            twistPicture(180);
+        function twistPicture(turn) {
+            $('#game-image').css({
+                'transform': 'rotate(' + turn + 'deg)'
+            });
+            setTimeout(function () {
+                turn += 45;
+                twistPicture(turn);
+            }, 1000);
+        }
+        twistPicture(180);
     })
 })

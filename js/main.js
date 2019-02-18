@@ -26,4 +26,23 @@ $(document).ready(function () {
             $(contentEl).slideUp(700);
         }
     });
-});
+    $('.rating-star').click(function () {
+        // var star = 0;
+        // if (star == 0) {
+        //     $('.rating-star').attr('src', '../images/favourite copy 4.png');
+        // } else if (star == 1) {
+        $('.rating-star').attr('src', '../images/favourite.png');
+    });
+    $('#game-image').click(function () {
+            function twistPicture(turn) {
+                $('#game-image').css({
+                    'transform': 'rotate(' + turn + 'deg)'
+                });
+                setTimeout(function () {
+                    turn += 45;
+                    twistPicture(turn);
+                }, 1000);
+            }
+            twistPicture(180);
+    })
+})
